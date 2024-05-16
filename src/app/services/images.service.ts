@@ -1,17 +1,22 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class ImagesService {
-  constructor() {}
 
-  getimages() {
+  constructor() { }
+
+  getImages() {
     return imagesDetails.slice(0);
   }
 
-  getImagebyId(id: number) {
-    return imagesDetails.slice(0).find((image) => image.id == id);
+  getImageById(id: number) {
+    return imagesDetails.slice(0).find(image => image.id == id);
+  }
+
+  getImagesByBrand(brand: string) {
+    
   }
 }
 

@@ -11,18 +11,18 @@ import { CommonModule } from '@angular/common';
   styleUrl: './image-gallery.component.css',
 })
 export class ImageGalleryComponent {
-  allImages: Bike[] = [];
+  allImages: any [] = [];
   filterby : string = 'all';
 
   constructor(private imageService: ImagesService) {
-    this.allImages = imageService.getimages();
+    this.allImages = imageService.getImages();
     console.log(
       'Todas las imagenes que me retorno el servicio previamente inyectado '
     );
     console.dir(this.allImages);
 
     console.log('Buscamos la imagen de id 6 ');
-    console.dir(imageService.getImagebyId(6));
+    console.dir(imageService.getImageById(6));
   }
 
   filterBy(brand: string) {
