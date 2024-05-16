@@ -1,0 +1,29 @@
+.container {
+    padding: 0%;
+}
+
+.row {
+    width: 110%;
+}
+
+.col-12 {
+    padding: 0%;
+}
+
+.biciContainer {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+img {
+    border-radius: 5%;
+    border: 1px solid black;
+    height: 300px;
+    width: 350px;
+}
+
+h1 {
+    margin-top: 5%;
+    text-align: center;
+}
