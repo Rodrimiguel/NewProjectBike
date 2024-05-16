@@ -1,4 +1,13 @@
 <p>image-gallery works now!</p>
 
 
-
+<div class="">
+    <div class="">
+        <div class="">
+            <div class="" *ngFor="let image of (allImages)">
+                <h2>Bicicleta id : {{ image.id  }}</h2>
+                <img src="{{ image.url }}" alt="{{ image.brand }}">
+            </div>
+        </div>
+    </div>
+</div>

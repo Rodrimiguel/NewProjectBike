@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Bike } from '../../models/bike';
 import { ImagesService } from '../../services/images.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-image-gallery',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './image-gallery.component.html',
   styleUrl: './image-gallery.component.css'
 })
