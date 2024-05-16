@@ -1,11 +1,44 @@
 <p>image-gallery works now!</p>
 
 
-<div class="">
-    <div class="">
-        <div class="">
-            <div class="" *ngFor="let image of (allImages)">
+<div>
+
+    <div class="row">
+        <div class="col-sm-12 btn btn-primary">
+            Image Gallery
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success" (click)="filterBy">Todos los modelos</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success" (click)="filterBy">Para niños</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success" (click)="filterBy">Economicas</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success" (click)="filterBy">Con Motor</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success" (click)="filterBy">Para Adultos</button>
+        </div>
+        <div class="col-sm-1">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="biciContainer" *ngFor="let image of (allImages)">
                 <h2>Bicicleta id : {{ image.id  }}</h2>
+                <h3> Precio $: {{ image.precio }}</h3>
                 <img src="{{ image.url }}" alt="{{ image.brand }}">
             </div>
         </div>
